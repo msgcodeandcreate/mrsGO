@@ -13,11 +13,10 @@ body {
     margin: 0;
     padding: 0;
     font-weight: 400;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Futura Bk BT";
     font-size: 1rem;
     line-height: 1.58;
     color: #333;
-   /*  background-color: #f4f4f4; */
     height: 100%;
 
 
@@ -34,7 +33,7 @@ body:before {
     position: absolute;
     top: 0;
     left: 0;
-    background: 18.jpg;
+    background-image: "resources\static\white-4298476_1920.jpg";
     content: "";
     z-index: 0;
 }
@@ -49,11 +48,19 @@ body:before {
     display: none;
 }
 
-.form-control {
+.form-control-username {
     width: 100%;
     min-height: 38px;
     font-size: 15px;
     border: 1px solid #c8c8c8;
+    border-radius: 20px;
+}
+.form-control-message{
+    max-width: 700px;
+    min-height: 38px;
+    font-size: 15px;
+    border: 1px solid #c8c8c8;
+    border-radius: 20px;
 }
 
 .form-group {
@@ -91,6 +98,7 @@ button {
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     min-height: 38px;
+    border-radius: 10px;
 }
 
 button.default {
@@ -100,13 +108,13 @@ button.default {
 }
 
 button.primary {
-    background-color: #25be38;
+    background-color: #e566dd;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     color: #fff;
 }
 
 button.accent {
-    background-color: #1778dd;
+    background-color: #e566dd;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     color: #fff;
 }
@@ -120,7 +128,7 @@ button.accent {
     box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
     border-radius: 2px;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     display: inline-block;
     margin-top: 42px;
     vertical-align: middle;
@@ -146,7 +154,7 @@ button.accent {
 }
 
 .chat-container {
-    max-width: 700px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
@@ -162,7 +170,6 @@ button.accent {
     background-color: #FFF;
     margin: 0;
     overflow: auto;
-    overflow-y: scroll;
     padding: 0 20px 0px 20px;
     height: calc(100% - 150px);
 }
@@ -231,7 +238,7 @@ button.accent {
 }
 
 #messageForm .input-group button {
-    float: left;
+    float: right;
     width: 80px;
     height: 38px;
     margin-left: 5px;
@@ -267,7 +274,7 @@ button.accent {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 300px) {
     .chat-container {
         height: calc(100% - 30px);
     }
@@ -302,4 +309,12 @@ button.accent {
     .chat-header h2 {
         font-size: 1.1em;
     }
+}
+
+.far fa-smile{
+    font-size:24px;
+}
+
+.fas fa-file{
+    font-size: 24px;
 }
